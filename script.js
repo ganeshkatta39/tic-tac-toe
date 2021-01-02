@@ -99,6 +99,7 @@ function Win_check(marker){
 // this check for draw 
 function Draw_check(){
     if(!Inputs.includes("")){
+        Win_check()
         console.log("Draw")
         won_player.textContent = "Draw"
         win_stats.classList.add("show")
