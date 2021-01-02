@@ -68,8 +68,8 @@ function player_input(e){
 
     // creating a array for storing the inputs to check later
     Inputs[cell.classList[1][1]-1] = Player_marker
-    Win_check(Player_marker)
     Draw_check()
+    Win_check(Player_marker)
 }
 
 
