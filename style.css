@@ -272,67 +272,116 @@ button:hover {
   display: flex;
 }
 
-@media only screen and (min-width: 400px) {
-  .name {
-    font-size: 1.7rem;
-    padding-top: 0.5rem;
+@media only screen and (min-width: 500px),
+  screen and (min-height: 300px) and (orientation: landscape) {
+  :root {
+    --cell-size: 50px;
+  }
+  main {
+    margin: 0;
+  }
+  header {
+    padding-top: 3px;
+  }
+  main .board {
+    padding-top: 0rem;
+  }
+  main .container {
+    /* background-color: turquoise; */
+    height: 55vh;
   }
   main .turn {
+    top: 3px;
+    left: 3px;
+  }
+
+  footer {
     font-size: 1.5rem;
   }
+}
 
-  main .score h1 {
-    font-size: 2.5rem;
+@media only screen and (min-width: 400px) and (orientation: portrait) {
+  :root {
+    --cell-size: 70px;
   }
-
-  main .player {
+  header {
     font-size: 1.7rem;
   }
   footer {
     font-size: 1.5rem;
   }
+}
 
+@media only screen and (min-width: 520px) and (orientation: portrait) {
   :root {
-    --cell-size: 65px;
+    --cell-size: 70px;
+  }
+  header {
+    font-size: 1.7rem;
+  }
+  footer {
+    font-size: 1.5rem;
+  }
+  main {
+    margin: 4rem auto 0 auto;
+  }
+  main .board {
+    padding-top: 3rem;
+  }
+  main .turn {
+    top: 1rem;
+    left: 1rem;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (orientation: portrait) {
   :root {
-    --cell-size: 80px;
+    --cell-size: 130px;
   }
-  main .score h1 {
-    font-size: 3em;
+  main {
+    margin: 4rem auto 0 auto;
   }
-  main .player {
-    font-size: 1.8rem;
+
+  header {
+    padding-top: 2rem;
+    font-size: 2.5rem;
   }
-  main .container {
-    width: 50vw;
-    height: 50vh;
+
+  main .turn {
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.5rem;
+  }
+
+  main .board {
+    padding-top: 4rem;
   }
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 1024px) and (orientation: landscape) {
   :root {
-    --cell-size: 90px;
+    --cell-size: 100px;
+  }
+  main {
+    margin: 3.5rem auto 0 auto;
   }
 
-  main .container {
-    width: 40vw;
-    height: 55vh;
+  header {
+    padding-top: 1rem;
+    font-size: 2rem;
   }
-  main .won_player {
-    font-size: 6rem;
+
+  main .turn {
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.5rem;
   }
-  main button {
-    padding: 1rem;
-  }
-  main .score h1 {
-    font-size: 3.5rem;
-  }
-  main .player {
-    font-size: 1.9rem;
+
+  main .board {
+    padding-top: 3rem;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
+
 /*# sourceMappingURL=style.css.map */
